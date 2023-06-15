@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<!--npx tailwindcss -i ./src/input.css -o ./dist/businessinfo.css --watch-->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link href="framework/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+		<link href="framework/reset.css" rel="stylesheet">
+		<link href="css/businessInfo.css" rel="stylesheet">
+        <link href="../dist/businessinfo.css" rel="stylesheet">
+		<title>饿了么 商家信息</title>
+		<style>
+/* 在线链接服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
+			@font-face {
+			font-family: 'iconfont';  /* Project id 4109406 */
+			src: url('https://at.alicdn.com/t/c/font_4109406_wvvm134pt7t.woff2?t=1686130203527') format('woff2'),
+				url('https://at.alicdn.com/t/c/font_4109406_wvvm134pt7t.woff?t=1686130203527') format('woff'),
+				url('https://at.alicdn.com/t/c/font_4109406_wvvm134pt7t.ttf?t=1686130203527') format('truetype');
+			}
+			.iconfont{
+				font-family:"iconfont" !important;
+				font-size:18px;font-style:normal;
+				-webkit-font-smoothing: antialiased;
+				-webkit-text-stroke-width: 0.2px;
+				-moz-osx-font-smoothing: grayscale;
+			}			
+		</style>		
+	</head>
+	<body>
+		<div class="w-full h-full">
+			
+			<!-- header部分 -->
+			<header class="w-full h-10 bg-[#0097FF] text-[#fff] text-[4.8vm] fixed left-0 top-0 z-[1000] flex justify-center items-center">
+				<p>商家信息</p>
+			</header>
+			
+			<!-- 商家logo部分 -->
+			d
+			<div class="w-full h-[35vm]  flex justify-center items-center mt-10">
+				<img src="img/sj01.png" class="w-[40vm] h-[30vm] rounded-[5px]">
+			</div>
+			
+			<!-- 商家信息部分 -->
+			<div class="w-full h-[20vm] flex flex-col justify-center items-center">
+				<h1 class="text-lg font-bold">万家饺子（软件园E18店）</h1>
+				<p class="text-sm text-[#666] mt-[1vm]">&#165;15起送 &#165;3配送</p>
+				<p class="text-sm text-[#666] mt-[1vm]">各种饺子炒菜</p>
+			</div>
+			
+			<!-- 食品列表部分 -->
+			<ul class="w-full mb-[14vm]">
+				<li class="w-full box-border p-[2.5vm] select-none flex justify-between items-center">
+					<div class="flex items-center">
+						<img src="img/sp01.png" class="w-[20vm] h-[20vm]">
+						<div class="ml-[3vm]">
+							<h3 class="text-[3.8vm]  font-bold text-[#555]">纯肉鲜肉（水饺）</h3>
+							<p class="text-sm  mt-[2vm] text-[#888]">新鲜猪肉</p>
+							<p class="text-sm  mt-[2vm] text-[#888]">&#165;15</p>
+						</div>
+					</div>
+					<div class="w-[16vm] flex justify-between items-center">
+						<div>
+							<i class="text-[5.5vm] text-[#999] cursor-pointer iconfont">&#xe603;</i>
+						</div>
+						<p class="text-[3.6vm] text-[#333]"><span>3</span></p>
+						<div>
+							<i class="text-[5.5vm] text-[#0097EF] cursor-pointer iconfont">&#xe604;</i>
+						</div>
+					</div>
+				</li>
+				<li class="w-full box-border p-[2.5vm] select-none flex justify-between items-center">
+					<div class="flex items-center">
+						<img src="img/sp02.png"  class="w-[20vm] h-[20vm]">
+						<div class="ml-[3vm]">
+							<h3 class="text-[3.8vm] font-bold text-[#555]">玉米鲜肉（水饺）</h3>
+							<p class="text-sm mt-[2vm] text-[#888]" >玉米鲜肉</p>
+							<p class="text-sm  mt-[2vm] text-[#888]" >&#165;16</p>
+						</div>
+					</div>
+					<div class="w-[16vm] flex justify-between items-center">
+						<div>
+							<i class="text-[5.5vm] text-[#999] cursor-pointer iconfont">&#xe603;</i>
+						</div>
+						<p class="text-[3.6vm] text-[#333]"><span>2</span></p>
+						<div>
+							<i class="text-[5.5vm] text-[#0097EF] cursor-pointer iconfont">&#xe604;</i>
+						</div>
+					</div>
+				</li>
+				<li  class="w-full box-border p-[2.5vm] select-none flex justify-between items-center">
+					<div class="flex items-center">
+						<img src="img/sp03.png" class="w-[20vm] h-[20vm]">
+						<div class="ml-[3vm]">
+							<h3 class="text-[3.8vm] font-bold text-[#555]">虾仁三鲜（蒸饺）</h3>
+							<p class="text-sm mt-[2vm] text-[#888]">虾仁三鲜</p>
+							<p class="text-sm mt-[2vm] text-[#888]">&#165;22</p>
+						</div>
+					</div>
+					<div class="w-[16vm] flex justify-between items-center">
+						<div>
+						</div>
+						<p class="text-[3.6vm] text-[#333]"></p>
+						<div>
+							<i class="text-[5.5vm] text-[#0097EF] cursor-pointer iconfont">&#xe604;</i>
+						</div>
+					</div>
+				</li>
+				<li class="w-full box-border p-[2.5vm] select-none flex justify-between items-center">
+					<div class="flex items-center">
+						<img src="img/sp04.png" class="w-[20vm] h-[20vm]">
+						<div class="ml-[3vm]">
+							<h3 class="text-[3.8vm] font-bold text-[#555]">素三鲜（蒸饺）</h3>
+							<p class="text-sm  mt-[2vm] text-[#888]">素三鲜</p>
+							<p class="text-sm mt-[2vm] text-[#888]">&#165;15</p>
+						</div>
+					</div>
+					<div class="w-[16vm] flex justify-between items-center">
+						<div>
+						</div>
+						<p class="text-[3.6vm] text-[#333]"></p>
+						<div>
+							<i class="text-[5.5vm] text-[#0097EF] cursor-pointer iconfont">&#xe604;</i>
+						</div>
+					</div>
+				</li>
+				<li class="w-full box-border p-[2.5vm] select-none flex justify-between items-center">
+					<div class="flex items-center">
+						<img src="img/sp05.png" class="w-[20vm] h-[20vm]">
+						<div class="ml-[3vm]">
+							<h3 class="text-[3.8vm] font-bold text-[#555]">角瓜鸡蛋（蒸饺）</h3>
+							<p class="text-sm mt-[2vm] text-[#888]">角瓜鸡蛋</p>
+							<p class="text-sm  mt-[2vm] text-[#888]">&#165;16</p>
+						</div>
+					</div>
+					<div class="w-[16vm] flex justify-between items-center">
+						<div>
+						</div>
+						<p class="text-[3.6vm] text-[#333]"></p>
+						<div>
+							<i class="text-[5.5vm] text-[#0097EF] cursor-pointer iconfont">&#xe604;</i>
+						</div>
+					</div>
+				</li>
+				<li class="w-full box-border p-[2.5vm] select-none flex justify-between items-center">
+					<div class="flex items-center">
+						<img src="img/sp06.png" class="w-[20vm] h-[20vm]">
+						<div class="ml-[3vm]">
+							<h3 class="text-[3.8vm] font-bold text-[#555]">小白菜肉（水饺）</h3>
+							<p class="text-sm text-[#888] mt-[2vm]">小白菜肉</p>
+							<p class="text-sm text-[#888] mt-[2vm]">&#165;18</p>
+						</div>
+					</div>
+					<div class="w-[16vm] flex justify-between items-center">
+						<div>
+						</div>
+						<p class="text-[3.6vm] text-[#333]"></p>
+						<div>
+							<i class="text-[5.5vm] text-[#0097EF] cursor-pointer iconfont">&#xe604;</i>
+						</div>
+					</div>
+				</li>
+				<li class="w-full box-border p-[2.5vm] select-none flex justify-between items-center">
+					<div class="flex items-center">
+						<img src="img/sp07.png" class="w-[20vm] h-[20vm]">
+						<div class="ml-[3vm]">
+							<h3 class="text-[3.8vm] text-[#555] font-bold">芹菜牛肉（水饺）</h3>
+							<p class="text-[3vm] text-[#888] mt-[2vm]">芹菜牛肉</p>
+							<p class="text-[3vm] text-[#888] mt-[2vm]">&#165;18</p>
+						</div>
+					</div>
+					<div class="w-[16vm] flex justify-between items-center">
+						<div>
+						</div>
+						<p class="text-[3.6vm] text-[#333]"></p>
+						<div>
+							<i class="text-[5.5vm] text-[#0097EF] cursor-pointer iconfont">&#xe604;</i>
+						</div>
+					</div>
+				</li>
+			</ul>
+			
+			<!-- 购物车部分 -->
+			<div class="w-full h-[14vm] fixed left-0 bottom-0 flex">
+				<div class="flex-[2] bg-[#505051] flex">
+					<div class="w-[16vm] h-[16vm] box-border border-solid border-[1.6vm] rounded-full border-[#444]  bg-[#3190EB] text-[7vm] text-[#fff] flex justify-center items-center mt-[-4vm] ml-[3vm] relative">
+						<i class="iconfont">&#xe602;</i>
+						
+					</div>
+					<div class="text-[4.5vm] text-[#fff] mt-[1vm]">
+						<p class="text-[4.5vm] text-[#fff] mt-[1vm]">&#165;12.88</p>
+						<p class="text-sm text-[#AAA] ">另需配送费3元</p>
+					</div>
+				</div>
+				<div class="flex-1">
+					<!-- 不够起送费 -->
+					<!--
+					<div class="cart-right-item">
+						&#165;15起送
+					</div>
+					-->
+					<!-- 达到起送费 -->
+					<div class="w-full h-full bg-[#38CA73] text-[#fff] text-[4.5vm] font-bold select-none cursor-pointer flex justify-center items-center" onclick="location.href='order.html'">
+					    去结算
+					</div>
+				</div>
+			</div>
+			
+		</div>	
+	</body>
+</html>

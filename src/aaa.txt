@@ -1,0 +1,54 @@
+rax-view-v2
+box-border flex flex-col border-solid border-[#000]
+Category--categoryContent--unTpFyJ
+ block relative w-full h-[32px]
+ Category--categoryText--1dv1tJM
+ text-[#666] text-[14px] leading-[32px] float-left
+ rax-text-v2
+ box-border block whitespace-pre-wrap
+ Category--categorySlash--3Yuyz2V
+  pr-[8px] pl-[8px] py-0 float-left h-[32px] leading-[30px]
+  rax-slider-swipe
+FloorModule--tmcsContentItem--c31nDTr
+w-[220px] h-[304px] cursor-pointer relative overflow-hidden float-left mr-[13px]
+FloorModule--mask--26Ahf9Q
+w-[220px] h-[220px] rounded-[18px] absolute top-0 left-0 bg-[rgba(0,0,0,.02)]
+FloorModule--tmcsName--19MBfMf
+mt-[11px] text-[16px] font-medium h-[22px] leading-[22px] w-[208px] text-ellipsis overflow-hidden whitespace-nowrap text-[#000]
+FloorModule--tmcsPrice--1dbgcpg
+mt-[5px] text-[20px] leading-[24px] h-[24px] text-[#ff5000]
+FloorModule--tmcsContentItem1--1qW3uzm
+w-[220px] h-[304px] cursor-pointer relative overflow-hidden float-left
+rax-text-v2
+box-border block whitespace-pre-wrap
+  img lazyload="true" quality="normal" data-once="true" src="//gw.alicdn.com/bao/uploaded/i1/6000000007723/O1CN017ayOZA26vBexGgZvO_!!6000000007723-0-sm.jpg_220x10000Q75.jpg_.webp"
+                            data-before-current-y="383.015625" style="width: 222px; height: 302px;"
+                            data-appeared="false" data-has-appeared="true" data-has-disappeared="true
+FloorModule--tmgjContentItem--1k8fJG4
+w-[220xp] h-[304px] cursor-pointer relative overflow-hidden mb-[12px] float-left mr-[12px]
+FloorModule--tmgjName--1NNVOC8
+mt-[11px] text-[16px] font-medium h-[22px] leading-[22px] w-[208px] text-ellipsis overflow-hidden whitespace-nowrap text-[#000]
+rax-text-v2 FloorModule--tmgjPrice--3jyHUug
+mt-[5px] text-[20px] leading-[24px] h-[24px] text-[#ff5000]
+Wonderful--WonderfulItem--22oI0pH
+w-[220px] h-[304px] rounded-[18px] overflow-hidden float-left mr-[13px] mb-[22px] relative
+
+Wonderful--mask--1fwB7tp
+w-[220px] h-[220px] rounded-[18px] absolute top-0 left-0 bg-[(rgba(0,0,0,.02))]
+Wonderful--title--23U6SgE
+mt-[11px] mr-0 mb-0 ml-[6px] w-[208px] h-[44px] overflow-hidden text-[#000] text-[16px] leading-[22px]
+Wonderful--price--2VEZvrl
+mt-[5px] mr-0 mb-0 ml-[6px] text-[20px] leading-[24px] text-[#ff5000]
+Wonderful--WonderfulItemLast--3FYwXUC
+w-[220px] h-[304px] rounded-[18px] overflow-hidden float-left ml-0 mb-[22px] relative
+
+mr-10 box-border block whitespace-pre-wrap text-[#333] text-[12px] leading-[16px] text-center mt-[10px]
+mt-[16px] mr-[20px] mb-0 ml-[20px] h-[41px] w-[1px] bg-[hsla(0,0%,59.2%,.4)]
+
+
+
+
+
+
+
+

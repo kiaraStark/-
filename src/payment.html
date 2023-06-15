@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--npx tailwindcss -i ./src/input.css -o ./dist/payment.css --watch-->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link href="framework/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+		<link href="framework/reset.css" rel="stylesheet">
+		<link href="../dist/payment.css" rel="stylesheet">
+		<script src="js/payment.js"></script>
+		<title>饿了么 在线支付</title>
+		<style>
+			/* 在线链接服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
+			@font-face {
+			font-family: 'iconfont';  /* Project id 4109406 */
+			src: url('https://at.alicdn.com/t/c/font_4109406_hicsz14f0s.woff2?t=1686209026018') format('woff2'),
+				url('https://at.alicdn.com/t/c/font_4109406_hicsz14f0s.woff?t=1686209026018') format('woff'),
+				url('https://at.alicdn.com/t/c/font_4109406_hicsz14f0s.ttf?t=1686209026018') format('truetype');
+			}
+			.iconfont{
+				font-family:"iconfont" !important;
+				font-size:18px;font-style:normal;
+				-webkit-font-smoothing: antialiased;
+				-webkit-text-stroke-width: 0.2px;
+				-moz-osx-font-smoothing: grayscale;
+			}			
+		</style>
+	</head>
+	<body>
+		<div class="w-full h-full">
+			
+			<!-- header部分 -->
+			<header class="w-full h-12 bg-[#0097FF] text-[#fff] text-lg fixed left-0 top-0 z-[1000] flex justify-center items-center">
+				<p>在线支付</p>
+			</header>
+			
+			<!-- 订单信息部分 -->
+			<h3 class="mt-[12vm] box-border pt-[4vm] py-[4vm] pb-0 text-[4vm] font-light text-[#999]">订单信息：</h3>
+			<div class="box-border p-[4vm] text-[4vm] text-[#666] flex justify-between items-center">
+				<p>
+					万家饺子（软件园E18店）
+					<i class="fa fa-caret-down" id="showBtn"></i>
+				</p>
+				<p class="text-[orangered]">&#165;49</p>
+			</div>
+			<h3 class="mt-3 box-border pt-[4vm] py-[4vm] pb-0 text-[4vm] font-light text-[#999] pl-2">订单信息：</h3>
+			<div class="mt-3 pl-2 box-border p-[4vm] text-[4vm] text-[#666] flex justify-between items-center">
+				<p>
+					万家饺子（软件园E18店）
+					<i class="iconfont">&#xe65c;</i>
+				</p>
+				<p class="text-[orangered] pr-4">&#165;49</p>
+			</div>
+			
+			<!-- 订单明细部分 -->
+			<ul class="mt-3 w-full" id="detailetBox">
+				<li class="w-full box-border px-[1vm] py-[4vm] felx justify-between items-center">
+					<p class="text-[3vm] text-[#666]">纯肉鲜肉（水饺） x 2</p>
+					<p class="text-[3vm] text-[#666]">&#165;15</p>
+				</li>
+				<li class="w-full box-border px-[1vm] py-[4vm] felx justify-between items-center">
+					<p class="text-[3vm] text-[#666]">玉米鲜肉（水饺） x 1</p>
+					<p class="text-[3vm] text-[#666]">&#165;16</p>
+				</li>
+				<li class="w-full box-border px-[1vm] py-[4vm] felx justify-between items-center">
+					<p class="text-[3vm] text-[#666]">配送费</p>
+					<p class="text-[3vm] text-[#666]">&#165;3</p>
+				</li>
+			</ul>
+			
+			<!-- 支付方式部分 -->
+			<ul class="w-full ">
+				<li class="mt-5  pl-2 w-full box-border p-[4vm] flex justify-between items-center">
+					<img src="./img/alipay.png" class="w-[33vm] h-[11vm]">
+					<i class="iconfont text-[#38CA73] pr-2">&#xe744;</i>
+				</li>
+				<li class="mt-5 pl-2 w-full box-border p-[4vm] flex justify-between items-center">
+					<img src="./img/wechat.png" class="w-[33vm] h-[11vm]">
+				</li>
+			</ul>
+			<div class="mt-5 w-full box-border p-[4vm]">
+				<button class="mt-3 w-full h-10 border-none outline-none rounded-[4px] bg-[#38CA73] text-[#fff]">确认支付</button>
+			</div>
+			
+			<!-- 底部菜单部分 -->
+			<ul class="w-full h-[14vm] border-t-[1px] border-[#DDD] bg-[#fff] fixed left-0 bottom-0 flex justify-around items-center">
+				<li onclick="location.href='index.html'" class="flex flex-col justify-center items-center text-[#999] select-none cursor-pointer">
+					<i class="iconfont">&#xe8b9;</i>
+					<p class="text-sm">首页</p>
+				</li>
+				<li class="flex flex-col justify-center items-center text-[#999] select-none cursor-pointer">
+					<i class="iconfont">&#xe621;</i>
+					<p class="text-sm">发现</p>
+				</li >
+				<li onclick="location.href='orderList.html'" class="flex flex-col justify-center items-center text-[#999] select-none cursor-pointer">
+					<i class="iconfont">&#xe600;</i>
+					<p class="text-sm">订单</p>
+				</li>
+				<li class="flex flex-col justify-center items-center text-[#999] select-none cursor-pointer">
+					<i class="iconfont">&#xe601;</i>
+					<p class="text-sm">我的</p>
+				</li>
+			</ul>
+		</div>	
+	</body>
+</html>

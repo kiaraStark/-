@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!-- npx tailwindcss -i ./src/input.css -o ./dist/businessList.css --watch -->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link href="framework/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+		<link href="framework/reset.css" rel="stylesheet">
+		<link href="css/businessList.css" rel="stylesheet">
+		<link href="../dist/businessList.css" rel="stylesheet">		
+		<title>饿了么 商家列表</title>
+		<style>
+			@font-face {
+  				font-family: 'iconfont';  /* Project id 4109406 */
+  				src: url('https://at.alicdn.com/t/c/font_4109406_pwlm0n6690l.woff2?t=1686125108287') format('woff2'),
+      				url('https://at.alicdn.com/t/c/font_4109406_pwlm0n6690l.woff?t=1686125108287') format('woff'),
+       				url('https://at.alicdn.com/t/c/font_4109406_pwlm0n6690l.ttf?t=1686125108287') format('truetype');
+			}
+			.iconfont{
+				font-family:"iconfont" !important;
+				font-size:18px;font-style:normal;
+				-webkit-font-smoothing: antialiased;
+				-webkit-text-stroke-width: 0.2px;
+				-moz-osx-font-smoothing: grayscale;
+			}			
+		</style>			
+	</head>
+	<body>
+		<div class="w-full h-full">
+			
+			<!-- header部分 -->
+			<header class="w-full h-10 bg-[#0097FF] text-[#fff] text-[4.8vm] fixed left-0 top-0 z-[1000] flex justify-center items-center">
+				<p>商家列表</p>
+			</header>
+			
+			<!-- 商家列表部分 -->
+			<ul class="w-full mt-1 mb-[14vm]">
+				<li onclick="location.href='businessInfo.html'" class=" mt-10 cursor-pointer flex items-center">
+					<div class="relative">
+						<img src="img/sj01.png" class="w-[20vm] h-[20vm]">
+						<div class="w-[5vm] h-[5vm] bg-[red] text-[#fff] text-[3.6vm] rounded-[2.5vm] flex justify-center items-center absolute right-[-1.5vm] top-[-1.5vm]"></div>
+					</div>
+					<div class="ml-[3vm]">
+						<h3 class="text-lg text-[#555] font-bold">万家饺子（软件园E18店）</h3>
+						<p class="text-sm text-[#888] mt-[2vm]">&#165;15起送 | &#165;3配送</p>
+						<p class="text-sm text-[#888] mt-[2vm]">各种饺子炒菜</p>
+					</div>
+				</li>
+				<li onclick="location.href='businessInfo.html'" class="mt-3 w-full box-border p-[2.5vm] border-b-solid border-b-[1px] border-[#ddd] select-none cursor-pointer flex items-center">
+					<div class="relative">
+						<img src="img/sj02.png" class="w-[20vm] h-[20vm]">
+						<div class="business-imw-[5vm] h-[5vm] bg-[red] text-[#fff] text-[3.6vm] rounded-[2.5vm] flex justify-center items-center absolute right-[-1.5vm] top-[-1.5vm]g-quantity"></div>
+					</div>
+					<div class="ml-[3vm]">
+						<h3 class="text-lg text-[#555] font-bold">小锅饭豆腐馆（全运店）</h3>
+						<p  class="text-sm text-[#888] mt-[2vm]">&#165;15起送 | &#165;3配送</p>
+						<p  class="text-sm text-[#888] mt-[4vm]">特色美食</p>
+					</div>
+				</li>
+				<li onclick="location.href='businessInfo.html'" class="mt-3 w-full box-border p-[2.5vm] border-b-solid border-b-[1px] border-[#ddd] select-none cursor-pointer flex items-center">
+					<div class="relative">
+						<img src="img/sj03.png" class="w-[20vm] h-[20vm]">
+						<div class="w-[5vm] h-[5vm] bg-[red] text-[#fff] text-[3.6vm] rounded-[2.5vm] flex justify-center items-center absolute right-[-1.5vm] top-[-1.5vm]"></div>
+					</div>
+					<div class="ml-[3vm]">
+						<h3 class="text-lg text-[#555] font-bold">麦当劳麦乐送（全运路店）</h3>
+						<p  class="text-sm text-[#888] mt-[2vm]">&#165;15起送 | &#165;3配送</p>
+						<p  class="text-sm text-[#888] mt-[2vm]">汉堡薯条</p>
+					</div>
+				</li>
+				<li onclick="location.href='businessInfo.html'" class="mt-3 w-full box-border p-[2.5vm] border-b-solid border-b-[1px] border-[#ddd] select-none cursor-pointer flex items-center">
+					<div class="relative">
+						<img src="img/sj04.png" class="w-[20vm] h-[20vm]">
+					</div>
+					<div class="ml-[3vm]">
+						<h3 class="text-lg text-[#555] font-bold">米村拌饭（浑南店）</h3>
+						<p  class="text-sm text-[#888] mt-[2vm]">&#165;15起送 | &#165;3配送</p>
+						<p  class="text-sm text-[#888] mt-[2vm]">各种炒菜拌饭</p>
+					</div>
+				</li>
+				<li onclick="location.href='businessInfo.html'" class="mt-3 w-full box-border p-[2.5vm] border-b-solid border-b-[1px] border-[#ddd] select-none cursor-pointer flex items-center">
+					<div class="relative">
+						<img src="img/sj05.png" class="w-[20vm] h-[20vm]">
+					</div>
+					<div class="ml-[3vm]">
+						<h3 class="text-lg text-[#555] font-bold">申记串道（中海康城店）</h3>
+						<p  class="text-sm text-[#888] mt-[2vm]">&#165;15起送 | &#165;3配送</p>
+						<p  class="text-sm text-[#888] mt-[2vm]">烤串炸串</p>
+					</div>
+				</li>
+				<li onclick="location.href='businessInfo.html'" class="mt-3 w-full box-border p-[2.5vm] border-b-solid border-b-[1px] border-[#ddd] select-none cursor-pointer flex items-center">
+					<div class="relative">
+						<img src="img/sj06.png" class="w-[20vm] h-[20vm]">
+					</div>
+					<div class="ml-[3vm]">
+						<h3 class="text-lg text-[#555] font-bold">半亩良田排骨米饭</h3>
+						<p  class="text-sm text-[#888] mt-[2vm]">&#165;15起送 | &#165;3配送</p>
+						<p  class="text-sm text-[#888] mt-[2vm]">排骨米饭套餐</p>
+					</div>
+				</li>
+				<li onclick="location.href='businessInfo.html'" class="mt-3 w-full box-border p-[2.5vm] border-b-solid border-b-[1px] border-[#ddd] select-none cursor-pointer flex items-center">
+					<div class="relative">
+						<img src="img/sj07.png" class="w-[20vm] h-[20vm]">
+					</div>
+					<div class="ml-[3vm]">
+						<h3 class="text-lg text-[#555] font-bold">茶兮鲜果饮品（国际软件园店）</h3>
+						<p  class="text-sm text-[#888] mt-[2vm]">&#165;15起送 | &#165;3配送</p>
+						<p  class="text-sm text-[#888] mt-[2vm]">甜品饮品</p>
+					</div>
+				</li>
+				<li onclick="location.href='businessInfo.html'" class="mt-3 w-full box-border p-[2.5vm] border-b-solid border-b-[1px] border-[#ddd] select-none cursor-pointer flex items-center">
+					<div class="relative">
+						<img src="img/sj08.png" class="w-[20vm] h-[20vm]">
+					</div>
+					<div class="ml-[3vm]">
+						<h3 class="text-lg text-[#555] font-bold">唯一水果捞（软件园E18店）</h3>
+						<p  class="text-sm text-[#888] mt-[2vm]">&#165;15起送 | &#165;3配送</p>
+						<p  class="text-sm text-[#888] mt-[2vm]">新鲜水果</p>
+					</div>
+				</li>
+				<li onclick="location.href='businessInfo.html'" class="mt-3 w-full box-border p-[2.5vm] border-b-solid border-b-[1px] border-[#ddd] select-none cursor-pointer flex items-center">
+					<div class="relative">
+						<img src="img/sj09.png" class="w-[20vm] h-[20vm]">
+					</div>
+					<div class="ml-[3vm]">
+						<h3 class="text-lg text-[#555] font-bold">满园春饼（全运路店）</h3>
+						<p  class="text-sm text-[#888] mt-[2vm]">&#165;15起送 | &#165;3配送</p>
+						<p  class="text-sm text-[#888] mt-[2vm]">各种春饼</p>
+					</div>
+				</li>
+			</ul>
+			
+			<!-- 底部菜单部分 -->
+			<ul class="w-full h-[14vm] border-t-[1px] border-[#DDD] bg-[#fff] fixed left-0 bottom-0 flex justify-around items-center">
+				<li onclick="location.href='index.html'" class="flex flex-col justify-center items-center text-[#999] select-none cursor-pointer">
+					<i class="iconfont">&#xe8b9;</i>
+					<p class="text-sm">首页</p>
+				</li>
+				<li class="flex flex-col justify-center items-center text-[#999] select-none cursor-pointer">
+					<i class="iconfont">&#xe621;</i>
+					<p class="text-sm">发现</p>
+				</li >
+				<li onclick="location.href='orderList.html'" class="flex flex-col justify-center items-center text-[#999] select-none cursor-pointer">
+					<i class="iconfont">&#xe600;</i>
+					<p class="text-sm">订单</p>
+				</li>
+				<li class="flex flex-col justify-center items-center text-[#999] select-none cursor-pointer">
+					<i class="iconfont">&#xe601;</i>
+					<p class="text-sm">我的</p>
+				</li>
+			</ul>
+			
+		</div>
+	</body>
+</html>

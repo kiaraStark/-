@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<!--npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch-->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link href="framework/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+		<link href="framework/reset.css" rel="stylesheet">
+		<link href="framework/icon.css" rel="stylesheet">
+		<link href="../css/index.css" rel="stylesheet">
+        <link href="../dist/output.css" rel="stylesheet">
+		<script src="js/index.js"></script>
+		<title>饿了么 首页</title>
+		<style>
+		/* 在线链接服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
+		@font-face {
+  			font-family: 'iconfont';  /* Project id 4109406 */
+  			src: url('https://at.alicdn.com/t/c/font_4109406_mgn8j4mepql.woff2?t=1686204711193') format('woff2'),
+       			url('https://at.alicdn.com/t/c/font_4109406_mgn8j4mepql.woff?t=1686204711193') format('woff'),
+       			url('https://at.alicdn.com/t/c/font_4109406_mgn8j4mepql.ttf?t=1686204711193') format('truetype');
+		}
+			.iconfont{
+				font-family:"iconfont" !important;
+				font-size:18px;font-style:normal;
+				-webkit-font-smoothing: antialiased;
+				-webkit-text-stroke-width: 0.2px;
+				-moz-osx-font-smoothing: grayscale;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 总容器 -->
+		<div class="w-full h-full">
+			<!-- header部分 -->
+			<header class="w-full h-12 bg-[#0097FF] flex items-cneter">
+                <!--<div class="icon-location-box">-->
+				<div class="w-[3.5vm] h-[3.5vm] mt-0 mr-[1vm] mb-0 ml-[3vm]">
+				    <div class="icon-location">
+						
+					</div>
+				</div> 
+				           
+				<div class=" text-lg mt-3 font-bold text-white">
+					<i class="iconfont">&#xe616;</i>
+					沈阳市规划大厦
+					<i class="iconfont">&#xe65c;</i>
+				</div>
+			</header>
+			
+			<!-- search部分 -->
+			<!-- 
+			    搜索框部分（此块与search-fixed-top块宽度高度一致，用于当
+				search-fixed-top块固定后，挡住下面块不要窜上去） 
+			-->
+			<div class="w-full h-[13vm]">
+				<!-- 当滚动条超过上面的定位块时，search-fixed-top块变成固定在顶部。 -->
+				<div class="w-full h-14 bg-[#0097FF] flex justify-center items-center" id="fixedBox">
+					<!-- 搜索框部分中间的白框 -->
+					<div class="w-10/12 h-10 bg-white rounded-[2px] flex justify-center items-center text-lg text-[#AEAEAE] select-none">
+						<i class="iconfont">&#xe622;</i>搜索饿了么商家、商品名称
+					</div>
+				</div>
+			</div>
+			
+			<!-- 点餐分类部分 -->
+			<ul class="w-full h-[48vm] flex flex-wrap justify-around content-center">
+				<li onclick="location.href='businessList.html'" class="w-[18vw] h-[20vw] flex flex-col justify-center items-center select-none cursor-pointer">
+					<img src="img/dcfl01.png" class="w-[12vw] h-[10.3vw]">
+					<p class="text-[3.2vw] text-[#666]">美食</p>
+				</li>
+				<li onclick="location.href='businessList.html'"class="w-[18vw] h-[20vw] flex flex-col justify-center items-center select-none cursor-pointer">
+					<img src="img/dcfl02.png" class="w-[12vw] h-[10.3vw]">
+					<p class="text-[3.2vw] text-[#666]">早餐</p>
+				</li>
+				<li onclick="location.href='businessList.html'"class="w-[18vw] h-[20vw] flex flex-col justify-center items-center select-none cursor-pointer">
+					<img src="img/dcfl03.png" class="w-[12vw] h-[10.3vw]">
+					<p class="text-[3.2vw] text-[#666]">跑腿代购</p>
+				</li>
+				<li onclick="location.href='businessList.html'"class="w-[18vw] h-[20vw] flex flex-col justify-center items-center select-none cursor-pointer">
+					<img src="img/dcfl04.png" class="w-[12vw] h-[10.3vw]">
+					<p class="text-[3.2vw] text-[#666]">汉堡披萨</p>
+				</li>
+				<li onclick="location.href='businessList.html'"class="w-[18vw] h-[20vw] flex flex-col justify-center items-center select-none cursor-pointer">
+					<img src="img/dcfl05.png" class="w-[12vw] h-[10.3vw]">
+					<p class="text-[3.2vw] text-[#666]">甜品饮品</p>
+				</li>
+				<li onclick="location.href='businessList.html'"class="w-[18vw] h-[20vw] flex flex-col justify-center items-center select-none cursor-pointer">
+					<img src="img/dcfl06.png" class="w-[12vw] h-[10.3vw]">
+					<p class="text-[3.2vw] text-[#666]">速食简餐</p>
+				</li>
+				<li onclick="location.href='businessList.html'"class="w-[18vw] h-[20vw] flex flex-col justify-center items-center select-none cursor-pointer">
+					<img src="img/dcfl07.png" class="w-[12vw] h-[10.3vw]">
+					<p class="text-[3.2vw] text-[#666]">地方小吃</p>
+				</li>
+				<li onclick="location.href='businessList.html'"class="w-[18vw] h-[20vw] flex flex-col justify-center items-center select-none cursor-pointer">
+					<img src="img/dcfl08.png" class="w-[12vw] h-[10.3vw]">
+					<p class="text-[3.2vw] text-[#666]">米粉面馆</p>
+				</li>
+				<li onclick="location.href='businessList.html'"class="w-[18vw] h-[20vw] flex flex-col justify-center items-center select-none cursor-pointer">
+					<img src="img/dcfl09.png" class="w-[12vw] h-[10.3vw]">
+					<p class="text-[3.2vw] text-[#666]">包子粥铺</p>
+				</li>
+				<li onclick="location.href='businessList.html'"class="w-[18vw] h-[20vw] flex flex-col justify-center items-center select-none cursor-pointer">
+					<img src="img/dcfl10.png" class="w-[12vw] h-[10.3vw]">
+					<p class="text-[3.2vw] text-[#666]">炸鸡炸串</p>
+				</li>
+			</ul>
+			
+			<!-- 横幅广告部分 -->
+			<div class=" h-[29vw] w-full  bg-[url('../src/img/index_banner.png')]  ">
+				<h3 class="text-[4.2vw] mb-[1.2vm] font-bold pl-7">品质套餐</h3>
+				<p class="text-[3.4vm] text-[#666] mb-[2.4vm] pl-7">搭配齐全吃得好</p>
+				<a class="text-[2vm] text-[#C79060] font-bold pl-7 ">立即抢购 &gt;</a>
+			</div>
+			
+			<!-- 超级会员部分 -->
+            <!--my-auto是否成立-->
+			<div class="mt-3 w-full mx-0 my-auto h-12 bg-[#FEEDC1]  rounded-[2px] text-[#644F1B] flex justify-between items-center bg-banner">
+				<div class="flex items-center ml-[4vm] select-none">
+					<img src="img/super_member.png" class="w-7 h-7 mr-[2vm]">
+					<h3 class="text-lg mr-[2vm] font-semibold">超级会员</h3>
+					<p class="text-sm">&#8226; 每月享超值权益</p>
+				</div>
+				<div class="text-[3vm] mr-[4vm] cursor-pointer">
+					立即开通 &gt;
+				</div>
+			</div>
+			
+			<!-- 推荐商家部分 -->
+			<div class="w-full h-12 flex justify-center items-center">
+				<div class="w-[6vm] h-[0.2vm] bg-[#888]"></div>
+				<p class="text-lg mx-0 my-[4vm]">推荐商家</p>
+				<div class="recommend-line"></div>
+			</div>
+			
+			<!-- 推荐方式部分 -->
+			<ul class="w-full h-12 mb-5vm flex justify-around items-center">
+				<li class="text-[3.5vm] text-[#555]">综合排序<i class="fa fa-caret-down"></i></li>
+				<li class="text-[3.5vm] text-[#555]">距离最近</li>
+				<li class="text-[3.5vm] text-[#555]">销量最高</li>
+				<li class="text-[3.5vm] text-[#555]">筛选</li>
+			</ul>
+			
+			<!-- 推荐商家列表部分 -->
+			<ul class="w-full mb-[14vm]">
+				<li class="w-full box-border p-2.5vm select-none border-solid border-b-[1px] border-[#DDD] flex">
+					<img src="img/sj01.png" class="w-[18vm] h-[18vm]">
+					<div class="w-full box-border pl-[3vm]">
+						<div class="flex justify-between items-center mb-[2vm]">
+							<h3 class="text-lg text-[#333] font-bold">万家饺子 (软件园E18店)</h3>
+							<div class="w-[1.6vm] h-[3.4vm] bg-#666 text-[#fff] text-[4vm] mr-[4vm] flex justify-center items-center">&#8226;</div>
+						</div>
+						<div class="flex justify-between items-center mb-[2vm] text-[3.1vm]">
+							<div class="flex items-center">
+								<i class="text-[#FEC80E] mr-[0.5vm] iconfont">&#xe60d;</i>
+								<i class="text-[#FEC80E] mr-[0.5vm] iconfont">&#xe60d;</i>
+								<i class="text-[#FEC80E] mr-[0.5vm] iconfont">&#xe60d;</i>
+								<i class="text-[#FEC80E] mr-[0.5vm] iconfont">&#xe60d;</i>
+								<i class="text-[#FEC80E] mr-[0.5vm] iconfont">&#xe60d;</i>
+								<p class="text-[#666] ml-[1vm]">4.9 月售345单</p>
+							</div>
+							<div class="bg-[#0097FF] text-[#fff] text-[2.4vm] rounded-[2px] px-0 py-[0.6vm]">
+								蜂鸟专送
+							</div>
+						</div>
+						<div class="flex justify-between items-center mb-[2vm] text-[#666] text-[3.1vm]">
+							<p>&#165;15起送 | &#165;3配送</p>
+							<p>3.22km | 30分钟</p>
+						</div>
+						<div class="flex items-center mb-[3vm]">
+							<div class="border border-solid border-[#DDD] text-[2.8vm] text-[#666] rounded-[3px] px-0 py-[0.1vm] ">各种饺子</div>
+						</div>
+						<div class="flex justify-between items-center bm-[1.8vm]">
+							<div class="flex items-center">
+								<div class="w-[4vm] h-[4vm] bg-[#70BC46] rounded-[3px] text-[3vm] text-[#fff] flex content-center items-center">新</div>
+								<p class="text-[#666] text-[3vm] ml-[2vm]">饿了么新用户首单立减9元</p>
+							</div>
+							<div class="flex items-center text-[2.5vm] text-[#999]">
+								<p class="mr-[2vm]">2个活动</p>
+								<i class="ml-1vm"></i>
+							</div>
+						</div>
+						<div class="flex content-between items-center mb-[1.8vm]">
+							<div class="flex items-center">
+								<div class="w-[4vm] h-[4vm] bg-[#70BC46] rounded-[3px] text-[3vm] text-[#fff] flex justify-center items-center" style="background-color: #F1884F;">特</div>
+								<p class="text-[#666] text-[3vm] ml-[2vm]">特价商品5元起</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="w-full box-border p-[2.5vm] select-none border-solid border-b-[1px] border-[#DDD] flex">
+					<img src="img/sj02.png" class="w-[18vm] h-[18vm]">
+					<div class="w-full box-border pl-[3vm]">
+						<div class="flex justify-between items-center mb-[2vm] font-bold">
+							<h3 class="text-lg text-[#333] font-bold">小锅饭豆腐馆（全运店）</h3>
+							<div class="w-[1.6vm] h-[3.4vm] bg-#666 text-[#fff] text-[4vm] mr-[4vm] flex justify-center items-center">&#8226;</div>
+						</div>
+						<div class="flex justify-between items-center mb-[2vm] text-[3.1vm]">
+							<div class="flex items-center">
+								<i class="text-[#FEC80E] mr-[0.5vm] iconfont">&#xe60d;</i>
+								<i class="text-[#FEC80E] mr-[0.5vm] iconfont">&#xe60d;</i>
+								<i class="text-[#FEC80E] mr-[0.5vm] iconfont">&#xe60d;</i>
+								<i class="text-[#FEC80E] mr-[0.5vm] iconfont">&#xe60d;</i>
+								<i class="text-[#FEC80E] mr-[0.5vm] iconfont">&#xe60d;</i>
+								<p class="text-[#666] ml-[1vm]">4.9 月售345单</p>
+							</div>
+							<div class="bg-[#0097FF] text-[#fff] text-[2.4vm] rounded-[2px] px-0 py-[0.6vm]">
+								蜂鸟专送
+							</div>
+						</div>
+						<div class="flex justify-between items-center mb-[2vm] text-[#666] text-[3.1vm]">
+							<p>&#165;15起送 | &#165;3配送</p>
+							<p>3.22km | 30分钟</p>
+						</div>
+						<div class="flex items-center mb-[3vm]">
+							<div  class="border border-solid border-[#DDD] text-[2.8vm] text-[#666] rounded-[3px] px-0 py-[0.1vm] ">各种饺子</div>
+						</div>
+						<div class="flex justify-between items-center bm-[1.8vm]">
+							<div class="flex items-center">
+								<div class="w-[4vm] h-[4vm] bg-[#70BC46] rounded-[3px] text-[3vm] text-[#fff] flex content-center items-center">新</div>
+								<p class="text-[#666] text-[3vm] ml-[2vm]">饿了么新用户首单立减9元</p>
+							</div>
+							<div class="flex items-center text-[2.5vm] text-[#999]">
+								<p class="mr-[2vm]">2个活动</p>
+								<i class="ml-1vm"></i>
+							</div>
+						</div>
+						<div class="flex content-between items-center mb-[1.8vm]">
+							<div class="flex items-center">
+								<div class="w-[4vm] h-[4vm] bg-[#70BC46] rounded-[3px] text-[3vm] text-[#fff] flex justify-center items-center" style="background-color: #F1884F;">特</div>
+								<p class="text-[#666] text-[3vm] ml-[2vm]">特价商品5元起</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="w-full box-border p-[2.5vm] select-none border-solid border-b-[1px] border-[#DDD] flex">
+					<img src="img/sj03.png" class="w-[18vm] h-[18vm]">
+					<div class="w-full box-border pl-[3vm]">
+						<div class="flex justify-between items-center mb-[2vm]">
+							<h3 class="text-lg text-[#333] font-bold">麦当劳麦乐送（全运路店）</h3>
+							<div class="w-[1.6vm] h-[3.4vm] bg-#666 text-[#fff] text-[4vm] mr-[4vm] flex justify-center items-center">&#8226;</div>
+						</div>
+						<div class="flex justify-between items-center mb-[2vm] text-[3.1vm]">
+							<div class="flex items-center">
+								<i class="text-[#FEC80E] mr-[0.5vm] iconfont">&#xe60d;</i>
+								<i class="text-[#FEC80E] mr-[0.5vm] iconfont">&#xe60d;</i>
+								<i class="text-[#FEC80E] mr-[0.5vm] iconfont">&#xe60d;</i>
+								<i class="text-[#FEC80E] mr-[0.5vm] iconfont">&#xe60d;</i>
+								<i class="text-[#FEC80E] mr-[0.5vm] iconfont">&#xe60d;</i>
+								<p class="text-[#666] ml-[1vm]">4.9 月售345单</p>
+							</div>
+							<div class="bg-[#0097FF] text-[#fff] text-[2.4vm] rounded-[2px] px-0 py-[0.6vm]">
+								蜂鸟专送
+							</div>
+						</div>
+						<div class="flex justify-between items-center mb-[2vm] text-[#666] text-[3.1vm]">
+							<p>&#165;15起送 | &#165;3配送</p>
+							<p>3.22km | 30分钟</p>
+						</div>
+						<div class="flex items-center mb-[3vm]">
+							<div class="border border-solid border-[#DDD] text-[2.8vm] text-[#666] rounded-[3px] px-0 py-[0.1vm] ">各种饺子</div>
+						</div>
+						<div class="flex justify-between items-center bm-[1.8vm]">
+							<div class="flex items-center">
+								<div class="w-[4vm] h-[4vm] bg-[#70BC46] rounded-[3px] text-[3vm] text-[#fff] flex content-center items-center">新</div>
+								<p class="text-[#666] text-[3vm] ml-[2vm]">饿了么新用户首单立减9元</p>
+							</div>
+							<div class="flex items-center text-[2.5vm] text-[#999]">
+								<p class="mr-[2vm]">2个活动</p>
+								<i class="ml-[1vm]"></i>
+							</div>
+						</div>
+						<div class="flex content-between items-center mb-[1.8vm]">
+							<div class="flex items-center">
+								<div class="w-[4vm] h-[4vm] bg-[#70BC46] rounded-[3px] text-[3vm] text-[#fff] flex justify-center items-center" style="background-color: #F1884F;">特</div>
+								<p class="text-[#666] text-[3vm] ml-[2vm]">特价商品5元起</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="w-full box-border p-[2.5vm] select-none border-solid border-b-[1px] border-[#DDD] flex">
+					<img src="img/sj04.png" class="w-[18vm] h-[18vm]">
+					<div class="w-full box-border pl-[3vm]">
+						<div class="flex justify-between items-center mb-[2vm]">
+							<h3 class="text-lg text-[#333] font-bold">米村拌饭（浑南店）</h3>
+							<div class="w-[1.6vm] h-[3.4vm] bg-#666 text-[#fff] text-[4vm] mr-[4vm] flex justify-center items-center">&#8226;</div>
+						</div>
+						<div class="flex justify-between items-center mb-[2vm] text-[3.1vm]">
+							<div class="flex items-center">
+								<i class="text-[#FEC80E] mr-[0.5vm] iconfont">&#xe60d;</i>
+								<i class="text-[#FEC80E] mr-[0.5vm] iconfont">&#xe60d;</i>
+								<i class="text-[#FEC80E] mr-[0.5vm] iconfont">&#xe60d;</i>
+								<i class="text-[#FEC80E] mr-[0.5vm] iconfont">&#xe60d;</i>
+								<i class="text-[#FEC80E] mr-[0.5vm] iconfont">&#xe60d;</i>
+								<p class="text-[#666] ml-[1vm]">4.9 月售345单</p>
+							</div>
+							<div class="bg-[#0097FF] text-[#fff] text-[2.4vm] rounded-[2px] px-0 py-[0.6vm]">
+								蜂鸟专送
+							</div>
+						</div>
+						<div class="flex justify-between items-center mb-[2vm] text-[#666] text-[3.1vm]">
+							<p>&#165;15起送 | &#165;3配送</p>
+							<p>3.22km | 30分钟</p>
+						</div>
+						<div class="flex items-center mb-[3vm]">
+							<div class="border border-solid border-[#DDD] text-[2.8vm] text-[#666] rounded-[3px] px-0 py-[0.1vm] ">各种饺子</div>
+						</div>
+						<div class="flex justify-between items-center bm-[1.8vm]">
+							<div class="flex items-center">
+								<div class="w-[4vm] h-[4vm] bg-[#70BC46] rounded-[3px] text-[3vm] text-[#fff] flex content-center items-center">新</div>
+								<p class="text-[#666] text-[3vm] ml-[2vm]">饿了么新用户首单立减9元</p>
+							</div>
+							<div class="flex items-center text-[2.5vm] text-[#999]">
+								<p class="mr-[2vm]">2个活动</p>
+								<i class="ml-[1vm]"></i>
+							</div>
+						</div>
+						<div class="flex content-between items-center mb-[1.8vm]">
+							<div class="flex items-center">
+								<div class="w-[4vm] h-[4vm] bg-[#70BC46] rounded-[3px] text-[3vm] text-[#fff] flex justify-center items-center" style="background-color: #F1884F;">特</div>
+								<p class="text-[#666] text-[3vm] ml-[2vm]">特价商品5元起</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="w-full box-border p-[2.5vm] select-none border-solid border-b-[1px] border-[#DDD] flex">
+					<img src="img/sj05.png" class="w-[18vm] h-[18vm]">
+					<div class="w-full box-border pl-[3vm]">
+						<div class="flex justify-between items-center mb-[2vm]">
+							<h3 class="text-lg text-[#333] font-bold">申记串道（中海康城店）</h3>
+							<div class="w-[1.6vm] h-[3.4vm] bg-#666 text-[#fff] text-[4vm] mr-[4vm] flex justify-center items-center">&#8226;</div>
+						</div>
+						<div class="flex justify-between items-center mb-[2vm] text-[3.1vm]">
+							<div class="flex items-center">
+								<i class="text-[#FEC80E] mr-[0.5vm] iconfont">&#xe60d;</i>
+								<i class="text-[#FEC80E] mr-[0.5vm] iconfont">&#xe60d;</i>
+								<i class="text-[#FEC80E] mr-[0.5vm] iconfont">&#xe60d;</i>
+								<i class="text-[#FEC80E] mr-[0.5vm] iconfont">&#xe60d;</i>
+								<i class="text-[#FEC80E] mr-[0.5vm] iconfont">&#xe60d;</i>
+								<p class="text-[#666] ml-[1vm]">4.9 月售345单</p>
+							</div>
+							<div class="bg-[#0097FF] text-[#fff] text-[2.4vm] rounded-[2px] px-0 py-[0.6vm]">
+								蜂鸟专送
+							</div>
+						</div>
+						<div class="flex justify-between items-center mb-[2vm] text-[#666] text-[3.1vm]">
+							<p>&#165;15起送 | &#165;3配送</p>
+							<p>3.22km | 30分钟</p>
+						</div>
+						<div class="flex items-center mb-[3vm]">
+							<div class="border border-solid border-[#DDD] text-[2.8vm] text-[#666] rounded-[3px] px-0 py-[0.1vm] ">各种饺子</div>
+						</div>
+						<div class="flex justify-between items-center bm-[1.8vm]">
+							<div class="flex items-center">
+								<div class="w-[4vm] h-[4vm] bg-[#70BC46] rounded-[3px] text-[3vm] text-[#fff] flex content-center items-center">新</div>
+								<p class="text-[#666] text-[3vm] ml-[2vm]">饿了么新用户首单立减9元</p>
+							</div>
+							<div class="flex items-center text-[2.5vm] text-[#999]">
+								<p class="mr-[2vm]">2个活动</p>
+								<i class="ml-[1vm]"></i>
+							</div>
+						</div>
+						<div class="flex content-between items-center mb-[1.8vm]">
+							<div class="flex items-center">
+								<div class="w-[4vm] h-[4vm] bg-[#70BC46] rounded-[3px] text-[3vm] text-[#fff] flex justify-center items-center" style="background-color: #F1884F;">特</div>
+								<p class="text-[#666] text-[3vm] ml-[2vm]">特价商品5元起</p>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+			
+			<!-- 底部菜单部分 -->
+			<ul class="w-full h-[14vm] border-t-[1px] border-[#DDD] bg-[#fff] fixed left-0 bottom-0 flex justify-around items-center">
+				<li onclick="location.href='index.html'" class="flex flex-col justify-center items-center text-[#999] select-none cursor-pointer">
+					<i class="iconfont">&#xe8b9;</i>
+					<p class="text-[2.8vm]">首页</p>
+				</li>
+				<li class="flex flex-col justify-center items-center text-[#999] select-none cursor-pointer">
+					<i class="iconfont">&#xe621;</i>
+					<p class="text-[2.8vm]">发现</p>
+				</li >
+				<li onclick="location.href='orderList.html'" class="flex flex-col justify-center items-center text-[#999] select-none cursor-pointer">
+					<i class="iconfont">&#xe600;</i>
+					<p class="text-[2.8vm]">订单</p>
+				</li>
+				<li class="flex flex-col justify-center items-center text-[#999] select-none cursor-pointer">
+					<i class="iconfont">&#xe601;</i>
+					<p class="text-[2.8vm]">我的</p>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>
+

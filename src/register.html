@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!-- npx tailwindcss -i ./src/input.css -o ./dist/register.css --watch -->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link href="framework/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+		<link href="framework/reset.css" rel="stylesheet">
+		<link href="css/register.css" rel="stylesheet">
+		<link href="../dist/register.css" rel="stylesheet">
+		<title>饿了么 用户注册</title>
+		<style>
+			@font-face {
+  				font-family: 'iconfont';  /* Project id 4109406 */
+  				src: url('https://at.alicdn.com/t/c/font_4109406_pwlm0n6690l.woff2?t=1686125108287') format('woff2'),
+      				url('https://at.alicdn.com/t/c/font_4109406_pwlm0n6690l.woff?t=1686125108287') format('woff'),
+       				url('https://at.alicdn.com/t/c/font_4109406_pwlm0n6690l.ttf?t=1686125108287') format('truetype');
+			}
+			.iconfont{
+				font-family:"iconfont" !important;
+				font-size:18px;font-style:normal;
+				-webkit-font-smoothing: antialiased;
+				-webkit-text-stroke-width: 0.2px;
+				-moz-osx-font-smoothing: grayscale;
+			}			
+		</style>
+	</head>
+	<body>
+		<div class="w-full h-full">
+			
+			<!-- header部分 -->
+			<header class="w-full h-12 bg-[#0097FF] text-[#fff] text-[4.8vm] fixed left-0 top-0 z-[1000] flex justify-center items-center">
+				<p>用户注册</p>
+			</header>
+			
+			<!-- 表单部分 -->
+			<ul class="w-full mt-[12vm]">
+				<li class="box-border pt-[4vm] pr-[3vm] pb-0 pl-[3vm] flex items-center mt-3">
+					<div class="flex-[0 0 18vm] text-[3vm] font-bold text-[#666]">
+						手机号码：
+					</div>
+					<div class="content">
+						<input type="text" placeholder="手机号码">
+					</div>
+				</li>
+				<li class="box-border pt-[4vm] pr-[3vm] pb-0 pl-[3vm] flex items-center">
+					<div class="flex-[0 0 18vm] text-[3vm] font-bold text-[#666]">
+					
+					</div>
+					<div class="flex-1">
+						<input type="password" placeholder="" class="border-none outline-none w-full h-[4vm] text-[3vm]">
+					</div>
+				</li>
+				<li class="box-border pt-[4vm] pr-[3vm] pb-0 pl-[3vm] flex items-center">
+					<div class="pl-2 flex-[0 0 18vm] text-sm font-bold text-[#666]">
+						手机号码：
+					</div>
+					<div class="content">
+						<input type="text" placeholder="手机号码" class="text-sm">
+					</div>
+				</li>
+				<li class="pl-2 box-border pt-[4vm] pr-[3vm] pb-0  flex items-center mt-3">
+					<div class="flex-[0 0 18vm] text-sm font-bold text-[#666]">
+						密码：
+					</div>
+					<div class="flex-1">
+						<input type="password" placeholder="密码" class=" text-sm pl-7">
+					</div>
+				</li>
+				<li class="pl-2 box-border pt-[4vm] pr-[3vm] pb-0  flex items-center mt-3">
+					<div class="flex-[0 0 18vm] text-sm font-bold text-[#666]">
+						确认密码：
+					</div>
+					<div class="flex-1">
+						<input type="password" placeholder="确认密码" class="border-none outline-none w-full h-[4vm] text-sm">
+					</div>
+				</li>
+				<li class="pl-2 box-border pt-[4vm] pr-[3vm] pb-0  flex items-center mt-3">
+					<div class="flex-[0 0 18vm] text-sm font-bold text-[#666]">
+						用户姓名：
+					</div>
+					<div class="flex-1">
+						<input type="text" placeholder="用户姓名" class="border-none outline-none w-full h-[4vm] text-sm">
+					</div>
+				</li>
+				<li class="pl-2 box-border pt-[4vm] pr-[3vm] pb-0  flex items-center mt-3">
+					<div class="flex-[0 0 18vm] text-sm font-bold text-[#666]">
+						性别：
+					</div>
+					<div class="flex-1 " style="font-size: 3vw;">
+						<input type="radio" name="sex" checked style="width:6vw;height: 3.2vw;" class="border-none outline-none w-full h-[4vm] text-sm">男
+						<input type="radio" name="sex" style="width:6vw;height: 3.2vw;" class="border-none outline-none w-full h-[4vm] text-sm">女
+					</div>
+				</li>
+			</ul>
+			
+			<div class="w-full box-border pt-[4vm] pr-[3vm] pb-0 pl-[3vm] mt-3">
+				<button onclick="location.href='login.html'" class="w-full h-12 text-[3.8vm] font-bold text-[#fff] bg-[#38CA73] rounded-[4px] border-none outline-none">注册</button>
+			</div>
+			
+			<!-- 底部菜单部分 -->
+			<ul class="w-full h-[14vm] border-t-[1px] border-[#DDD] bg-[#fff] fixed left-0 bottom-0 flex justify-around items-center">
+				<li onclick="location.href='index.html'" class="flex flex-col justify-center items-center text-[#999] select-none cursor-pointer">
+					<i class="iconfont">&#xe8b9;</i>
+					<p class="text-sm">首页</p>
+				</li>
+				<li class="flex flex-col justify-center items-center text-[#999] select-none cursor-pointer">
+					<i class="iconfont">&#xe621;</i>
+					<p class="text-sm">发现</p>
+				</li >
+				<li onclick="location.href='orderList.html'" class="flex flex-col justify-center items-center text-[#999] select-none cursor-pointer">
+					<i class="iconfont">&#xe600;</i>
+					<p class="text-sm">订单</p>
+				</li>
+				<li class="flex flex-col justify-center items-center text-[#999] select-none cursor-pointer">
+					<i class="iconfont">&#xe601;</i>
+					<p class="text-sm">我的</p>
+				</li>
+			</ul>
+		</div>	
+	</body>
+</html>
